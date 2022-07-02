@@ -1,0 +1,347 @@
+/**
+ * @name library
+ * @description A cozy, library themed theme.
+ * @version 1.0.0
+ * @server https://discord.gg/MDr2tK8YHN 
+ * @author NicoLovesCode (github) Tiramisu#9193 (discord)
+ * @source https://github.com/NicoLoveCode/Library.theme.css
+ */
+ 
+
+
+
+
+
+
+
+ :root {
+	--sidebar-text-brightness 0.5;
+	--chat-text-brightness 0.5;
+	}
+	
+	
+	 :root{
+		--opacity:.5;
+		--c:hsl(216deg ,7% ,14%,var(--opacity));
+		--primary-bg:linear-gradient(var(--c),var(--c));
+		--bg:
+			linear-gradient(hsla(0, 0%, 0%, .5),hsla(0, 0%, 0%, .5)),
+			url("https://wallpaperaccess.com/full/1223169.jpg"),
+			linear-gradient( .1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
+		--gap:5px;
+	}
+	
+	/* Mac titlebar */
+	.platform-win .typeWindows-2-g3UY {
+		z-index: 102;
+		position: absolute;
+		flex-direction: row;
+		align-items: center;
+		top: 1px;
+		width: calc(65px + 12px);
+		left: 0;
+		margin: 0;
+		padding-top: 11px;
+		-webkit-app-region: no-drag;
+	}
+	
+	.platform-win .typeWindows-2-g3UY .wordmark-2u86JB {
+		top: 11px;
+		left: 11px;
+		width: 52px;
+		height: 12px;
+		padding: 0;
+		-webkit-app-region: no-drag;
+	}
+	
+	.platform-win .typeWindows-2-g3UY .wordmark-2u86JB g {
+		display: none;
+	}
+	
+	.platform-win .typeWindows-2-g3UY .winButtonClose-3Q8ZH5.winButton-3UMjdg {
+		margin-left: 10px;
+	}
+	
+	.platform-win .typeWindows-2-g3UY .winButton-3UMjdg {
+		width: 12px;
+		height: 12px;
+		margin-left: 8px;
+		border-radius: 15px;
+		background-color: var(--background-primary);
+		background-size: 0;
+		-webkit-app-region: no-drag;
+	}
+	
+	.platform-win.theme-light .typeWindows-2-g3UY .winButton-3UMjdg {
+		background-color: hsl(var(--accent-hue), 2%, 83%);
+	}
+	
+	.platform-win .typeWindows-2-g3UY .winButton-3UMjdg svg {
+		display: none;
+	}
+	
+	.platform-win.app-focused .typeWindows-2-g3UY:hover div.winButton-3UMjdg {
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	
+	.platform-win.app-focused .typeWindows-2-g3UY .winButtonClose-3Q8ZH5 {
+		background-color: hsl(2, 100%, 67%);
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMjkyODkgNkwyLjgxODAxIDMuNTI1MTNMMy41MjUxMiAyLjgxODAyTDUuOTk5OTkgNS4yOTI4OUw4LjQ3NDg3IDIuODE4MDJMOS4xODE5NyAzLjUyNTEzTDYuNzA3MSA2TDkuMTgxOTcgOC40NzQ4N0w4LjQ3NDg3IDkuMTgxOThMNS45OTk5OSA2LjcwNzExTDMuNTI1MTIgOS4xODE5OEwyLjgxODAxIDguNDc0ODdMNS4yOTI4OSA2WiIgZmlsbD0iI0EyMDAwOCIvPgo8L3N2Zz4=);
+	}
+	
+	.platform-win.app-focused .typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(2n) {
+		background-color: hsl(40, 98%, 62%);
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDUuMzk5OTlIMlY2LjU5OTk5SDEwVjUuMzk5OTlaIiBmaWxsPSIjQjM3MTFBIi8+Cjwvc3ZnPg==);
+	}
+	
+	.platform-win.app-focused .typeWindows-2-g3UY .winButtonMinMax-3RsPUg:nth-child(3n) {
+		order: 3;
+		background-color: hsl(134, 68%, 47%);
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMzkyOTMgMy4wMDg5M0wzLjAwODg3IDcuMzkyOTlMMi44MTc5NSAyLjgxODAxTDcuMzkyOTMgMy4wMDg5M1oiIGZpbGw9IiMwMjZBMTUiLz4KPHBhdGggZD0iTTQuNjA2OTUgOC45OTEwMUw4Ljk5MTAxIDQuNjA2OTVMOS4xODE5MyA5LjE4MTkzTDQuNjA2OTUgOC45OTEwMVogIiBmaWxsPSIjMDI2QTE1Ii8+Cjwvc3ZnPg==);
+	}
+	
+	/* Channeltabs */
+	.platform-win #channelTabs-container {
+		margin-top: 29px;
+	}
+	
+	.platform-win #channelTabs-container::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 29px;
+		margin-left: 62px;
+		-webkit-app-region: drag;
+	}
+	
+	/* BetterFormattingRedux PLUGIN */
+	
+	.bf-toolbar div.bf-arrow {
+		bottom:15px;
+	}
+	
+	#bfredux:hover > div.bf-arrow {
+		bottom:0px;
+	}
+	
+	/* END BetterFormattingRedux PLUGIN*/
+	#app-mount {
+		background-image: var(--bg)!important;
+		background-size: cover ;
+		background-position: center ;
+	}
+	
+	.app-2CXKsg,
+	.bg-1QIAus,
+	.layers-OrUESM,
+	.wrapper-1_HaEi,
+	.scroller-3X7KbA,
+	.container-2o3qEW,
+	.chat-2ZfjoI, 
+	.members-3WRCEx>div,
+	.container-1NXEtd,
+	.scrollableContainer-15eg7h.webkit-QgSAqd,
+	.contentRegion-3HkfJJ,
+	.scroller-WSmht3,
+	.privateChannels-oVe7HL,
+	.layer-86YKbF,
+	.standardSidebarView-E9Pc3j,
+	.contentRegionScroller-2_GT_N,
+	.titleContainer-3fPic2,
+	.header-JUTO-g{
+		background:transparent;
+	}
+	
+	.messagesWrapper-RpOMA3,
+	.members-3WRCEx,
+	.expandedFolderBackground-1kSAf6,
+	.sidebarRegionScroller-FXiQOh,
+	.searchBar-3TnChZ,
+	.contentRegion-3HkfJJ,
+	.wrapper-1_HaEi,
+	.theme-dark .container-2cd8Mz{
+		background: var(--primary-bg) !important;
+	}
+	
+	
+	.panels-3wFtMD,.container-1-ERn5.clickable-vvKY2q{
+		background: var(--primary-bg)!important;
+	}
+	.container-ZMc96U.themed-Hp1KC_,.channelTextArea-1FufC0 {
+		background: var(--primary-bg)!important;
+	}
+	
+	
+	
+	
+	
+	/* Scrollbar */
+	::-webkit-scrollbar {
+		width:1px !important;
+		background: transparent !important;
+	}
+	::-webkit-scrollbar-thumb {
+		background: orange!important;
+	}
+	
+	/* END Scrollbar */
+	
+	.tree-3agP2X{
+		padding-top:10px;
+	}
+	
+	.chatContent-3KubbW,
+	.sidebar-1tnWFu,
+	.wrapper-1_HaEi{
+		margin: 0 var(--gap) 0 0;
+	}
+	
+	.wrapper-1_HaEi,
+	.contentRegion-3HkfJJ{
+		border-radius:7px;
+	}
+	.app-3xd6d0 {
+		margin:var(--gap);
+	}
+	
+	 .sidebar-1tnWFu{
+		background: var(--primary-bg);
+		border-radius: 5px !important;
+	}
+	.mention-3XBnnZ,
+	.nowPlayingColumn-1eCBCN{
+	  display: none;
+	}
+	
+	.form-3gdLxP {
+		flex-shrink: 0;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-top: 5px;
+		background: var(--primary-bg);
+	}
+	.children-3xh0VB:after,
+	.form-3gdLxP:before {
+		content: none;
+	}
+	
+	.channelTextArea-1VQBuV {
+		position: relative;
+		width: 100;
+		text-indent: 0;
+		padding-right: 0px;
+	}
+	
+	.form-3gdLxP {
+		border-radius:5px ;
+	}
+	
+	.inner-NQg18Y.sansAttachButton-1ERHue{
+		padding-right:8px;
+	}
+	
+	.members-3WRCEx.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN,.messagesWrapper-RpOMA3{
+		border-radius:0 0 5px 5px;
+	}
+	
+	
+	section.container-ZMc96U.themed-Hp1KC_{
+		border-radius:5px 5px 0 0;
+	}
+	
+	
+	[aria-label=" (channel)"] .messagesWrapper-RpOMA3,[aria-label=" (channel)"] .form-3gdLxP{
+		margin-right:calc(-1 * var(--gap));
+	}
+	
+	/* ======================== */
+	/* ======== Settings ====== */
+	/* ======================== */
+	
+	.layer-86YKbF.baseLayer-W6S8cY.stop-animations[aria-hidden=true]{
+		display:none;
+	}
+	.layer-86YKbF[aria-hidden=true],
+	#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div:nth-child(2) > .standardSidebarView-E9Pc3j{
+		background: transparent !important;
+	}
+	
+	.sidebarRegion-1VBisG{
+		margin:0 var(--gap) 0 0;
+	}
+	
+	.sidebar-nqHbhN,
+	.toolsContainer-25FL6V,
+	.contentColumnDefault-3eyv5o{
+		padding-top: 30px ;
+	}
+	
+	.sidebarRegionScroller-FXiQOh,.contentRegionShownSidebar-fHXkEg{
+		border-radius:5px;
+	}
+	
+	/* =============================== */
+	/* ======== Server Settings ====== */
+	/* =============================== */
+	
+	.contentWidth-3aWel5{
+		height:100%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.scroller-14hecM{
+		overflow:unset !important;
+	}
+	
+	.permissionsWrapper-34gbP6{
+		overflow: hidden scroll;
+		height: 100%;
+	}
+	
+	
+	.wrapper-1_HaEi {
+		justify-content: flex-end;
+	}
+	
+	.tree-3agP2X {
+		justify-content: center;
+		align-self: center;
+		height: fit-content;
+		max-height: 97%;
+	}
+	
+	.scroller-3X7KbA {
+		contain: unset;
+	}
+	
+	.wordmarkWindows-2dq6rw{
+		animation: rainbow 6s linear 0s infinite normal;
+	}
+	
+	h1 {
+	
+		color: burlywood;
+	}
+	
+	.channelName-3KPsGw{
+		color: burlywood;
+	}
+	h2{
+		color: burlywood;
+	}
+	h3{
+		color: burlywood;
+	}
+	h4{
+		color: burlywood;
+	}
+	h5{
+		color: burlywood;
+	}
+	h6{
+		color: burlywood;
+	}
