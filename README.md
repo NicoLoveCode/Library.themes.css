@@ -21,7 +21,7 @@ change channel colors - find the code - ```
     color: burlywood;
 }``` and change ```burlywood``` to any color you would like
 
-(recommended) find ```h1 {
+(recommended) find ```h1, h2, h3, h4, h5, h6 {
        color: burlywood;
 }```
    and change ```burlywood``` to any color you would like!
