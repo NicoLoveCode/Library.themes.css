@@ -1,10 +1,11 @@
 /**
  * @name library
  * @description A cozy, library themed theme.
- * @version 1.4.0
+ * @version 1.0.0
  * @server https://discord.gg/MDr2tK8YHN 
  * @author NicoLovesCode (github) Tiramisu#9193 (discord)
  * @source https://github.com/NicoLoveCode/Library.theme.css
+ * @website https://nicolovecode.github.io/nicolovescode.github.io/
  */
  
 
@@ -425,4 +426,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .contents-3ca1mk {
 	color: rgb(119, 86, 40);
+}
+
+.contents-3ca1mk .strikethrough-2Kl6HF{
+    color: greenyellow;
 }
