@@ -1,8 +1,12 @@
 # Library.theme.css
 A cozy, library themed theme.
 
-pictures - ![image](https://user-images.githubusercontent.com/103645370/177005410-450d41b8-5fa8-4008-8cae-937790e77cf6.png)
-![image](https://user-images.githubusercontent.com/103645370/177005433-e0f25e11-d384-4001-b04b-d41ca1e63987.png)
+pictures - ![image](https://user-images.githubusercontent.com/103645370/177056693-938cd56f-aaf0-44dc-9dff-d6827e1d8b52.png)
+
+![image](https://user-images.githubusercontent.com/103645370/177056722-dcce860d-8d08-4471-a53d-916eefa26d25.png)
+
+![image](https://user-images.githubusercontent.com/103645370/177056741-b1800698-cacb-4c0a-9704-4a650bfa246a.png)
+
 
 info - 
 
